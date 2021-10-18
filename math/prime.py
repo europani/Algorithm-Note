@@ -21,7 +21,7 @@ def primeSieve(n):      # 에라토스테네스의 체
 
     for i in range(2, n+1):
         if num[i]==True:
-            for j in range(i*2, n+1, i):
+            for j in range(i*2, n+1, i):    # i의 배수 False 처리
                 num[j]=False
     
     for i in range(2, len(num)):
