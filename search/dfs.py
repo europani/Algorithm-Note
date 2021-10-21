@@ -1,5 +1,5 @@
-def dfs(graph, v, visited):
-    # 현재 노드 방문처리
+def dfs(graph, v, visited):         # Stack이 아닌 Recursion 방식 사용
+    # ★현재 노드 방문처리 후 출력
     visited[v] = True
     print(v, end=' ')
 
