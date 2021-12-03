@@ -6,9 +6,9 @@ def binary_search(array, target, start, end):
     if array[mid] == target:    # search 성공
         return mid
     elif array[mid] > target:   # 찾으려는 값이 작으면 왼쪽만 확인
-        binary_search(array, target, start, mid-1)
+        return binary_search(array, target, start, mid-1)
     else:                       # 찾으려는 값이 크면 오른쪽만 확인
-        binary_search(array, target, mid+1, end)
+        return binary_search(array, target, mid+1, end)
 
 n = int(input())        # 원소 갯수
 target = int(input())   # 찾으려는 값
