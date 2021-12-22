@@ -2,7 +2,7 @@ import heapq
 import sys
 
 input = sys.stdin.readline
-INF = int(1e9)      # 10억
+INF = sys.maxsize
 
 # n: 노드갯수, m: 간선갯수
 n, m = map(int, input().split())
