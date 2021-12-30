@@ -14,18 +14,18 @@ def union_parent(parent, a, b):
     else:
         parent[a] = b
 
-v, e = map(int, input().split())
-parent = [0] * (v + 1)          # 부모 테이블 : 각 원소의 부모 원소번호 저장
-
+n, m= map(int, input().split())
+parent = [0] * (n + 1)          # 부모 테이블 : 각 원소의 부모 원소번호 저장
 edges = []                      # 간선정보
+
 result = 0
 
 # 각 원소가 부모를 자기자신으로 초기화
-for i in range(1, v+1):
+for i in range(1, n+1):
     parent[i] = i               
 
 # 모든 간선정보 입력
-for _ in range(e):
+for _ in range(m):
     a, b, cost = map(int, input().split())
     # cost로 정렬하기 위해 첫번째 위치
     edges.append((cost, a, b))
